@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@source "../**/*.{ts,tsx}";
+
+@theme {
+  --font-display: "Newsreader", ui-serif, Georgia, "Times New Roman", serif;
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --color-ink: #1c1917;
+  --color-paper: #f4efe6;
+  --color-paper-raised: #fbf8f2;
+  --color-rule: #d6cfc3;
+  --color-rust: #b4532a;
+  --color-rust-dark: #8f3f1f;
+  --color-sage: #3f5d4a;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
