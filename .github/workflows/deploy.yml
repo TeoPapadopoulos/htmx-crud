@@ -16,4 +16,4 @@ jobs:
     runs-on: [self-hosted, wyse]
     steps:
       - run: |
-          curl -fsS -H "Authorization: Bearer ${{ secrets.COOLIFY_TOKEN}}" "${{ secrets.COOLIFY_WEBHOOK }}"
+          curl -fsS -X POST -H "Authorization: Bearer ${{ secrets.COOLIFY_TOKEN}}" "${{ secrets.COOLIFY_WEBHOOK }}"
